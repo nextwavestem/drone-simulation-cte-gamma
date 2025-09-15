@@ -1,0 +1,121 @@
+.blockpad-container,
+.canvas-container {
+  flex: 1;  
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+
+}
+
+.canvas-container > div {
+  margin-top: -0px; /* Adjust this value as needed for spacing */
+}
+
+.simulation-container {
+  border-top: 2px solid black;
+  flex: 1; 
+  display: flex;
+  height: 100vh;
+}
+
+.blockpad-container {
+  width: 50%; /* BlockPad takes half the space */
+}
+
+.row {
+  display: flex;          /* Use flexbox to create columns */
+  justify-content: space-between; /* Space between columns */
+  font-family: monospace !important;
+  margin-top: 8px;
+
+}
+
+.column {
+  flex: 1;               /* Equal width for all columns */
+  text-align: left;    /* Center align text */
+
+}
+
+/* Optional: Styling for buttons and spans */
+.coordinate,
+.rotation {
+  display: block;        /* Ensure each coordinate is on a new line */
+}
+
+button {
+  padding: 10px 15px;   /* Add some padding to the button */
+  cursor: pointer;       /* Change cursor on hover */
+}
+
+.canvas-container {
+  width: 50%; /* Canvas takes half the space */
+  background-color: #f0f0f0; /* Optional: background for clarity */
+}
+
+.blocklyTreeRow {
+  height: 35px;
+  line-height: 30px;
+}
+
+.blocklyTreeSeparator {
+  border-bottom: 1px solid #06b0f3;
+}
+
+.blocklyDiv {
+  height: 100%;
+  text-align: left;
+  width: 100%;
+}
+
+body {
+  color: #4a4a4a;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: monospace;
+}
+
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background-color: #fff;
+  font-size: 16px;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.toolbar {
+  background: white;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-top: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column; /* Stack the rows vertically */
+    align-items: stretch;   /* Stretch the columns to fill the toolbar */
+
+  .position {
+    padding: 10px;
+    padding-top: 15px;
+    font-family: monospace;
+    text-align: center;
+
+    .coordinate {
+      padding-right: 31px;
+    }
+  }
+}

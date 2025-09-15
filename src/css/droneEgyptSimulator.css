@@ -1,0 +1,100 @@
+.egypt-blockpad-container,
+.egypt-canvas-container {
+  flex: 1;
+  
+}
+
+.egpyt-simulation-container {
+  border-top: 2px solid black;
+  flex: 1; 
+  display: flex;
+  height: 100vh;
+}
+
+.egypt-blockpad-container {
+  width: 50%; /* BlockPad takes half the space */
+}
+
+.egypt-canvas-container {
+  width: 50%; /* Canvas takes half the space */
+  background-color: #f0f0f0; /* Optional: background for clarity */
+}
+
+.blocklyTreeRow {
+  height: 35px;
+  line-height: 30px;
+}
+
+.blocklyTreeSeparator {
+  border-bottom: 1px solid #06b0f3;
+}
+
+.blocklyDiv {
+  height: 100%;
+  text-align: left;
+  width: 100%;
+}
+
+body {
+  color: #4a4a4a;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: monospace !important;
+}
+
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background-color: #fff;
+  font-size: 16px;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.egpyt-simulation-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.egypt-blockpad-container {
+  flex: 1;
+  /* Adjust styling as needed for blockpad */
+}
+
+.egpyt-simulation-container {
+  display: flex;
+  height: 100vh;
+}
+
+.egypt-blockpad-container {
+  width: 25%; /* Adjust as needed */
+}
+
+.egypt-anvas-container {
+  flex: 1;
+}
+
+.camera-view-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  height: 20%;
+  border: 1px solid #ccc; /* Optional border for clarity */
+}

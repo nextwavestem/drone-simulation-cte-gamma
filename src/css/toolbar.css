@@ -1,0 +1,31 @@
+.toolbar {
+    background-color: white;
+    border-top: none;
+    padding: 3px 0px 0px 10px;
+    display: flex;
+    flex-direction: column; /* Arrange rows vertically */
+    text-align: left;
+    font-family: monospace;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .coordinate {
+    padding: 5px 0;
+  }
+  
+  .rotation {
+    padding: 5px 0;
+  }
+  

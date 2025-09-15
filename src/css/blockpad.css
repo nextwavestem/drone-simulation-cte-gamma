@@ -1,0 +1,112 @@
+.blockpad-wrapper { 
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure it takes full height */
+}
+  
+.button-bar {
+  padding: 5px 2px 0px 5px;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #ccc; /* Optional: visual separation */
+  font-family: monospace;
+}
+
+  
+.blockly-area {
+  flex-grow: 1; /* Make blockly-area take the remaining space */
+  width: 100%; /* Ensure it stretches horizontally */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  font-family: monospace;
+
+  overflow: auto; /* Ensure it can scroll if content is too large */
+}
+
+.blockly-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.blockly-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 60%;
+  max-height: 80%;
+  overflow-y: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+.blockly-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.blockly-modal-lesson-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.blockly-modal-lesson-button {
+  flex: 1 1 30%;
+  padding: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.blockly-modal-lesson-button:hover {
+  background-color: #dcdcdc;
+}
+
+.note-box {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  padding: 12px 16px;
+  width: 50%;
+  max-width: 600px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 2000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #555;
+}
+
+.close-btn:hover {
+  color: red;
+}

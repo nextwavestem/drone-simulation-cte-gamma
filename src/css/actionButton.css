@@ -1,0 +1,15 @@
+.action-button {
+    padding: 10px 20px;
+    background-color: #00d1b2; /* Green color */
+    color: white; /* White text for contrast */
+    border: none;
+    border-radius: 5px; /* Optional: rounded corners */
+    cursor: pointer;
+    font-family: monospace !important;
+
+  }
+  
+  .action-button:hover {
+    background-color: #00d1b2; /* Darker green on hover */
+  }
+  

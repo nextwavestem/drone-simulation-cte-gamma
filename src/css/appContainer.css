@@ -1,0 +1,32 @@
+.application-container {
+    height: 100vh !important; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    font-family: monospace !important;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    width: 100%;
+    height: auto; /* Set your preferred height */
+}
+
+.nws-logo {
+    flex: 0 0 50%; /* Take up 50% of the width */
+    display: flex;
+    align-items: center;
+}
+
+.nws-logo img {
+    max-width: 100%; /* Ensure the image scales */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.nws-home {
+    margin-left: auto; /* Push the home button to the right */
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
